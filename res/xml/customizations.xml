@@ -71,4 +71,9 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+         <com.android.settings.preferences.SystemSettingSwitchPreference
+	 	android:key="shake_clean_notification"
+	 	android:title="@string/shake_clean_notification"
+	 	android:defaultValue="true" />
+
 </PreferenceScreen>

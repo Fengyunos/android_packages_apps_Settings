@@ -329,5 +329,6 @@
     <string name="status_bar_network_traffic_style_up">Outgoing</string>
     <string name="status_bar_network_traffic_style_down">Incoming</string>
     <string name="status_bar_network_traffic_style_all">Outgoing and incoming</string>
+    <string name="shake_clean_notification">Notification bar notification shaking cleaning</string>
 
 </resources>
