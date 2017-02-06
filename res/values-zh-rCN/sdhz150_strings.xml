@@ -297,4 +297,6 @@
     <string name="status_bar_network_traffic_style_down">显示下载速度</string>
     <string name="status_bar_network_traffic_style_all">显示上传和下载速度</string>
     <string name="shake_clean_notification">通知栏通知晃动清理</string>
+    <string name="shake_clean_recent">晃动清理最近任务</string>
+    <string name="shake_clean_recent_summary">最近任务界面通过晃动清理</string>
 </resources>

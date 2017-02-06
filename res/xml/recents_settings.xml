@@ -19,6 +19,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/show_clear_all_recents_button_title">
 
+         <com.android.settings.preferences.SystemSettingSwitchPreference
+	 	android:key="shake_clean_recent"
+	 	android:title="@string/shake_clean_recent"
+	 	android:summary="@string/shake_clean_recent_summary"
+	 	android:defaultValue="true" />
+
         <SwitchPreference
             android:key="show_clear_all_recents"
             android:title="@string/show_clear_all_recents_button_title"
