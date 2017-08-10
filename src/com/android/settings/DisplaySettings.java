@@ -47,6 +47,7 @@ import android.support.v7.preference.DropDownPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceScreen;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -122,6 +123,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_NETWORK_NAME_DISPLAYED = "network_operator_display";
     private static final String SHOW_NETWORK_NAME_MODE = "show_network_name_mode";
     private static final String KEY_DOUBLE_TAP_SLEEP = "double_tap_sleep_gesture";
+    private static final String STATUS_BAR_NETWORK_TRAFFIC_STYLE = "status_bar_network_traffic_style";
     private static final String KEY_PROXIMITY_ON_WAKE =
                     Settings.System.PROXIMITY_ON_WAKE;
     private static final int SHOW_NETWORK_NAME_ON = 1;
@@ -139,6 +141,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private TimeoutListPreference mScreenTimeoutPreference;
     private ListPreference mNightModePreference;
+    private ListPreference mStatusBarNetworkTraffic;
     private Preference mScreenSaverPreference;
     private SwitchPreference mLiftToWakePreference;
     private SwitchPreference mDozePreference;
@@ -149,7 +152,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mNetworkNameDisplayedPreference = null;
     private SwitchPreference mDoubleTapSleepPreference;
     private SwitchPreference mProximityWakePreference;
-
     private SharedPreferences mSharedPreferences;
     private SharedPreferences.Editor mEditor;
     private boolean isRJILMode;
@@ -181,6 +183,15 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mScreenTimeoutPreference = (TimeoutListPreference) findPreference(KEY_SCREEN_TIMEOUT);
         isRJILMode = getResources().getBoolean(R.bool.show_font_size_config);
+
+        mStatusBarNetworkTraffic = (ListPreference) findPreference(STATUS_BAR_NETWORK_TRAFFIC_STYLE);
+        int networkTrafficStyle = Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE, 3);
+        mStatusBarNetworkTraffic.setValue(String.valueOf(networkTrafficStyle));
+        mStatusBarNetworkTraffic
+                .setSummary(mStatusBarNetworkTraffic.getEntry());
+        mStatusBarNetworkTraffic.setOnPreferenceChangeListener(this);
+
         if(isRJILMode) {
             removePreference(KEY_FONT_SIZE);
             mDialogPref = (WarnedPreference) findPreference(KEY_FONT_SIZE_MODE);
@@ -587,6 +598,16 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             } catch (NumberFormatException e) {
                 Log.e(TAG, "could not persist screen timeout setting", e);
             }
+        }
+        if (preference == mStatusBarNetworkTraffic) {
+            int networkTrafficStyle = Integer.valueOf((String) objValue);
+            int index = mStatusBarNetworkTraffic
+                    .findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.STATUS_BAR_NETWORK_TRAFFIC_STYLE,
+                    networkTrafficStyle);
+            mStatusBarNetworkTraffic.setSummary(mStatusBarNetworkTraffic
+                    .getEntries()[index]);
         }
         if (preference == mAutoBrightnessPreference) {
             boolean auto = (Boolean) objValue;

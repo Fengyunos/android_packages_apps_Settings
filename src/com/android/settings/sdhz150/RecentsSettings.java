@@ -26,9 +26,10 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v14.preference.SwitchPreference;
+import com.android.internal.logging.MetricsProto.MetricsEvent;
 import android.provider.Settings;
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
 
 public class RecentsSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
@@ -37,6 +38,11 @@ public class RecentsSettings extends SettingsPreferenceFragment implements OnPre
 
     private SwitchPreference mRecentsClearAll;
     private ListPreference mRecentsClearAllLocation;
+
+    @Override
+    protected int getMetricsCategory() {
+        return MetricsEvent.DISPLAY;
+    }
 
     @Override
     public void onCreate(Bundle icicle) {
