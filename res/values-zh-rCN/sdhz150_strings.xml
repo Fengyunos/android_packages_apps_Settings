@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016-2017 The halogenOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- General strings -->
+    <string name="cancel">取消</string>
+    <string name="save">确定</string>
+
+    <string name="background_processes_settings_title">后台进程</string>
+
+    <!-- Buttons -->
+    <string name="button_settings">按钮</string>
+    <string name="long_press_home_button_assist_title">长按home帮助</string>
+    <string name="long_press_home_button_assist_summary"> 是否协助意图应该长按主页按钮启动</string>
+    <string name="buttons_show_navbar_title">导航栏</string>
+    <string name="buttons_show_navbar_summary">是否显示导航栏</string>
+    <string name="buttons_hardware_buttons_category">硬件按钮</string>
+    <string name="buttons_button_backlight_title">按钮背光</string>
+    <string name="buttons_button_backlight_summary">是否启用按钮背光</string>
+    <string name="buttons_button_backlight_status">亮度: %s</string>
+    <string name="buttons_hw_buttons_title">硬件按钮</string>
+    <string name="buttons_hw_buttons_summary">是否启用硬件按钮.</string>
+    <string name="buttons_backlight_enable_backlight">启用背光</string>
+    <string name="general_brightness">亮度</string>
+    <string name="general_timeout">时间到</string>
+    <string name="general_on">开启</string>
+    <string name="general_off">关闭</string>
+    <string name="general_dimmed">变暗</string>
+    <string name="button_settings_title">导航键设置</string>
+    <string name="button_settings_summary">自定义您的硬件和软件密钥</string>
+
+    <!-- Allow fake signature checkbox in developer settings -->
+    <string name="allow_signature_fake">允许签名欺骗</string>
+    <string name="allow_signature_fake_summary">允许应用程序绕过安全系统，假装是另一个应用程序</string>
+    <string name="allow_signature_fake_warning">允许应用绕过安全系统可能会导致严重的安全性
+      和隐私问题！ 检查当这是活动时，只有良性应用程序使用相应的权限.</string>
+
+    <!-- Share halogenOS -->
+    <string name="share_xos_title">分享halogenOS</string>
+    <string name="share_xos_summary">让别人知道 halogenOS</string>
+    <string name="share_message">看看#halogenOS是什么 @ http://halogenOS.org/</string>
+    <string name="share_chooser_title">分享 halogenOS</string>
+
+    <!-- Developer options -> Disable dropbox -->
+    <string name="debug_disable_dropbox_title">禁用Dropbox</string>
+    <string name="debug_disable_dropbox_summary">
+        防止系统将调试日志的异常添加到保管箱中。
+         这不影响Logcat和其他日志记录机制。
+         此设置与云服务Dropbox无关!
+    </string>
+
+    <!-- Developer options -> Disable tombstones -->
+    <string name="debug_disable_tombstones_title">禁用屏幕</string>
+    <string name="debug_disable_tombstones_summary">
+        防止系统雕刻墓碑。墓碑是土生土长的崩溃
+带有大量调试信息的报告。通常不需要它们，
+但是有时候开发人员可能会问你要一个墓碑，所以启用它。
+在需要的时候.
+    </string>
+
+    <string name="xos_version">halogenOS版本</string>
+
+    <!-- [CHAR LIMIT=100] Notification Importance slider: very low importance level description -->
+    <string name="notification_importance_very_low">没有全屏中断，偷看，声音或振动。 显示在通知列表的底部。 从锁定屏幕隐藏.</string>
+
+    <!-- Camera sound switch -->
+    <string name="camera_sounds_title">相机快门声</string>
+
+    <!-- Revisions -->
+    <string name="rom_revisions">修订</string>
+
+    <!-- Display -> Double tap to sleep -->
+    <string name="double_tap_to_sleep_title">双击关闭屏幕</string>
+    <string name="double_tap_to_sleep_summary">双击状态栏进行关闭屏幕</string>
+
+     <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">高级重启</string>
+    <string name="advanced_reboot_summary">解锁时，请在电源菜单中包含重新启动到恢复，引导加载程序或执行软重启的选项</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">防止意外唤醒</string>
+    <string name="proximity_wake_summary">在唤醒屏幕之前检查接近传感器</string>
+
+   <!-- Customizations fragment -->
+   <string name="customizations_title">自定义</string>
+   <string name="navbar_enabled">启用导航栏</string>
+   <string name="navbar_disabled">导航栏已禁用</string>
+   <string name="customizations_keywords">自定义，电池图标，运营商标签，报价单，头饰，时钟，导航栏，钥匙，重新绑定，锁定屏幕</string>
+
+   <!-- Statusbar customisations title -->
+   <string name="statusbar_customisations_title">
+       状态栏自定义
+   </string>
+
+   <!-- Battery customizations -->
+    <string name="status_bar_battery_style_category_title">电池</string>
+    <string name="status_bar_battery_style_category_summary">自定义您的电池图标</string>
+    <string name="status_bar_battery_style_title">电池状态样式</string>
+    <string name="status_bar_battery_style_icon_portrait">电池竖立图标</string>
+    <string name="status_bar_battery_style_icon_landscape">电池横立图标</string>
+    <string name="status_bar_battery_style_circle">电池圆圈图标</string>
+    <string name="status_bar_battery_style_solid">实心</string>
+    <string name="status_bar_battery_style_text">电池文本</string>
+    <string name="status_bar_battery_style_hidden">隐藏</string>
+    <string name="status_bar_battery_percentage_title">电池百分比</string>
+    <string name="status_bar_battery_percentage_default">隐藏</string>
+    <string name="status_bar_battery_percentage_text_inside">图标内</string>
+    <string name="status_bar_battery_percentage_text_next">图标旁边</string>
+    <string name="status_bar_battery_style_tile_title">定制电池瓷砖风格</string>
+    <string name="status_bar_battery_style_tile_summary">允许为状态栏电池设置相同的图标样式</string>
+    <string name="force_charge_battery_text_title">充电时显示电池附近的百分比</string>
+    <string name="force_charge_battery_text_summary_on">充电时显示图标外的电池百分比</string>
+    <string name="force_charge_battery_text_summary_off">充电时显示图标中的电池百分比</string>
+
+    <!-- Custom carrier label and position -->
+    <string name="carrier_label_settings_title">运营商标签</string>
+    <string name="carrier_label_settings_summary">自定义运营商标签</string>
+    <string name="custom_carrier_label_title">自定义运营商标签</string>
+    <string name="custom_carrier_label_explain">请输入新标签。 留空以恢复股票标签.</string>
+    <string name="custom_carrier_label_notset">自定义标签当前未设置</string>
+    <string name="show_carrier_title">运营商标签</string>
+    <string name="show_carrier_disabled">已禁用</string>
+    <string name="show_carrier_keyguard">仅限锁屏</string>
+    <string name="show_carrier_statusbar">状态栏</string>
+    <string name="show_carrier_enabled">锁屏＆amp; 状态栏</string>
+
+    <!-- Status Bar Ticker and Headsup -->
+    <string name="ticker_and_headsup_settings_title">状态栏记录和头像</string>
+    <string name="ticker_and_headsup_settings_summary">自定义代码和特别的行为</string>
+    <string name="ticker_title">状态栏的代码</string>
+    <string name="ticker_summary">使旧的状态栏代码</string>
+    <string name="track_ticker_title">显示音乐轨道变化</string>
+    <string name="track_ticker_summary">当音乐播放时轨道发生变化时，将显示变化。.</string>
+    <string name="headsup_title">负责通知</string>
+    <string name="headsup_summary">使特别通知</string>
+    <string name="status_bar_notif_count_title">显示通知数</string>
+    <string name="status_bar_notif_count_summary">显示挂起通知的数量</string>
+
+    <!-- Wi-Fi settings screen, error message when the frequency band could not be set [CHAR LIMIT=50]. -->
+    <string name="wifi_setting_countrycode_error">有一个问题设置的区域码.</string>
+
+    <!-- Users -> Change Android ID -->
+    <string name="usersettings_change_android_id">改变Android ID</string>
+    <string name="usersettings_change_android_id_text">
+        在这里输入您想要的Android ID，或者将字段留空以生成新的id.
+    </string>
+
+    <!-- Expanded desktop -->
+    <string name="power_menu_expanded_desktop">扩展桌面</string>
+    <string name="expanded_hide_nothing">隐藏什么</string>
+    <string name="expanded_hide_status">隐藏状态栏</string>
+    <string name="expanded_hide_navigation">隐藏导航栏</string>
+    <string name="expanded_hide_both">隐藏</string>
+    <string name="expanded_nothing_to_show">要为扩展状态添加每个应用程序配置的自定义，将“启用为所有”设置为OFF位置</string>
+    <string name="expanded_desktop_state">扩展状态</string>
+    <string name="expanded_enabled_for_all">启用所有</string>
+    <string name="expanded_user_configurable">用户可配置的</string>
+    <string name="expanded_desktop_style">扩展桌面风格</string>
+    <string name="expanded_desktop_style_description">选择一个默认的扩展桌面风格</string>
+    <string name="expanded_desktop_title">扩展桌面选项</string>
+    <string name="sim_enabled">启用</string>
+    <string name="sim_disabled">禁用</string>
+    <string name="sim_missing">丢失或损坏</string>
+    <string name="sim_enabler_need_disable_sim">SIM卡将被停用。你想继续吗?</string>
+    <string name="sim_enabler_will_disable_sim_title">敬告</string>
+    <string name="sim_enabler_airplane_on">无法在飞行模式下执行操作.</string>
+    <string name="sim_enabler_in_call">无法执行操作，而在呼叫.</string>
+    <string name="sim_enabler_both_inactive">不能禁用所有SIM卡</string>
+    <string name="sim_enabler_enabling">激活\u2026</string>
+    <string name="sim_enabler_disabling">停用\u2026</string>
+    <string name="sub_activate_success">SIM卡激活.</string>
+    <string name="sub_activate_failed">激活失败.</string>
+    <string name="sub_deactivate_success">SIM卡无效.</string>
+    <string name="sub_deactivate_failed">停用.</string>
+
+    <!-- Fingerprint sensor locations -->
+    <string name="security_settings_fingerprint_sensor_location_back">后面</string>
+    <string name="security_settings_fingerprint_sensor_location_front">前面</string>
+    <string name="security_settings_fingerprint_sensor_location_left">左侧</string>
+    <string name="security_settings_fingerprint_sensor_location_right">右侧</string>
+
+    <!-- Battery stats reset -->
+    <string name="battery_stats_reset">重置统计资料</string>
+    <string name="battery_stats_message">电池历史数据将被重置</string>
+    <string name="ok_string">确定</string>
+
+    <!-- Volume button track change -->
+    <string name="volbtn_music_controls_title">音乐控制</string>
+    <string name="volbtn_music_controls_summary">关闭屏幕后，长按音量键将会寻找曲目</string>
+
+    <!-- Pixel Navbar Animation -->
+    <string name="pixel_navbar_anim_title">像素导航栏动画</string>
+    <string name="pixel_navbar_anim_summary">启用像素导航栏动画</string>
+
+    <!-- One handed mode -->
+    <string name="one_handed_mode_title">单手模式</string>
+    <string name="one_handed_mode_summary">允许在导航栏上滑动以启用单手模式</string>
+
+    <!-- HW Keys rebinding -->
+    <string name="hw_keys_rebinding_title">硬键定制重新绑定</string>
+    <string name="hw_keys_rebinding_summary">更改硬件键的默认行为</string>
+    <string name="home_key_title">主页按钮</string>
+    <string name="back_key_title">返回键</string>
+    <string name="menu_key_title">菜单键</string>
+    <string name="assist_key_title">辅助按钮</string>
+    <string name="app_switch_key_title">新近按钮</string>
+    <string name="camera_key_title">相机按钮</string>
+    <string name="short_press_title">短按动作</string>
+    <string name="long_press_title">长按动作</string>
+    <string name="double_tap_title">双击动作</string>
+    <string name="action_nothing">没有动作</string>
+    <string name="action_menu">打开/关闭菜单</string>
+    <string name="action_app_switch">近期</string>
+    <string name="action_search">搜索助理</string>
+    <string name="action_voice_search">声音搜索</string>
+    <string name="action_in_app_search">应用内搜索</string>
+    <string name="action_launch_camera">开放式摄像头</string>
+    <string name="action_last_app">启动最后一个应用</string>
+    <string name="action_splitscreen">分屏</string>
+    <string name="action_screen_off">关闭屏幕</string>
+    <string name="action_screenshot">截图</string>
+    <string name="action_onehand_left">单手模式(左)</string>
+    <string name="action_onehand_right">单手模式(右)</string>
+    <string name="action_partial_screenshot">部分截图</string>
+
+    <!-- Lockscreen Tweaks -->
+    <string name="lockscreen_tweaks">锁屏调整</string>
+    <string name="lockscreen_visualizer_title">锁屏显示器</string>
+    <string name="lockscreen_visualizer_summary">
+        是否在锁屏上显示音乐显示器
+    </string>
+
+    <!-- Linked / unlinked notification volume -->
+    <string name="link_volume_option_title">链接环和通知卷</string>
+    <string name="notification_volume_option_title">通知量</string>
+    <string name="ring_notification_volume_option_title">铃声和通知音量</string>
+
+    <!-- Clock settings -->
+    <string name="clock_settings_title">时钟设置</string>
+    <string name="clock_settings_summary">自定义时钟和日期选项</string>
+    <!-- clock date options -->
+    <string name="clock_title_enable">时钟位置</string>
+    <string name="status_bar_show_clock_title">显示时钟和日期</string>
+    <string name="status_bar_clock_seconds_title">显示秒</string>
+    <string name="status_bar_am_pm_title">上午/下午</string>
+    <string name="status_bar_am_pm_info">24小时制启用</string>
+    <string name="right_clock">右侧时钟</string>
+    <string name="center_clock">中心时钟</string>
+    <string name="left_clock">左侧时钟</string>
+    <string name="clock_date_display">日期</string>
+    <string name="clock_date_style">日期格式</string>
+    <string name="clock_date_position">日期位置</string>
+    <string name="clock_date_format">日期格式</string>
+    <string name="clock_date_string_edittext_title">日期格式必须是. MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">输入字符串</string>
+    <string name="clock_date_right">右侧时间</string>
+    <string name="clock_date_left">左侧时间</string>
+    <string name="clock_am_pm_date_normal">正常</string>
+    <string name="clock_am_pm_date_small">小</string>
+    <string name="clock_am_pm_date_none">隐藏</string>
+    <string name="clock_date_style_lowercase">小写字母</string>
+    <string name="clock_date_style_uppercase">大写字母</string>
+    <string name="clock_date_format_custom">java格式的自定义</string>
+
+    <!-- Development Settings summary-->
+    <string name="adb_enabled">ADB 启用</string>
+    <string name="adb_disabled">ADB 关闭</string>
+</resources>
